@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>CFTF - Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./Images/logo-bl.png">
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="#" class="active">
+            <span class="material-icons-sharp">dashboard</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="Tasks.html">
+            <span class="material-icons-sharp">task</span>
+            <h3>Tasks</h3>
+            <span class="message-count">6</span>
+          </a>
+          <a href="Inventory.html">
+            <span class="material-icons-sharp">inventory_2</span>
+            <h3>Inventory</h3>
+          </a>
+          <a href="profile.html">
+            <span class="material-icons-sharp">person_outline</span>
+            <h3>Profile</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <main>
+        <h1>Dashboard</h1>
+        <div class="insights">
+          <div class="sales">
+            <span class="material-icons-sharp">payments</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h>
+                <h1>FC 424,125</h>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx='38' cy='38' r=36></circle>
+                </svg>
+                <div class="number">
+                  <p>87%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="commission">
+            <span class="material-icons-sharp">account_balance_wallet</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Commission</h>
+                <h1>FC 80,500</h>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx='38' cy='38' r=36></circle>
+                </svg>
+                <div class="number">
+                  <p>87%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Last 30 Days</small>
+          </div>
+          <div class="carsold">
+            <span class="material-icons-sharp">sell</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Cars Sold</h>
+                <h1>6</h>
+              </div>
+            </div>
+            <small class="text-muted">Last 30 Days</small>
+          </div>
+          <p>Download Summary Report > </p>
+        </div>
+        <hr></hr>
+          <div class="recent-sales">
+            <h2>Recent Sales</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Invoice No.</th>
+                  <th>Vehicle</th>
+                  <th>Sales Price</th>
+                  <th>Customer</th>
+                  <th>Commission Earned</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td>CFTF6RGTI</td>
+                    <td>Volvo XC90 D5 R-Design</td>
+                    <td>FC 865,450</td>
+                    <td>Mr. X</td>
+                    <td>FC 164,435.50</td>
+                    <td><span class="material-icons-sharp">visibility</span></td>
+                    <td><span class="material-icons-sharp">file_download</span></td>
+                  </tr>
+                  <tr>
+                    <td>CFTF5RGTI</td>
+                    <td>Mercedes-Benz C200</td>
+                    <td>FC 665,000</td>
+                    <td>Mr. E Blues</td>
+                    <td>FC 126,350</td>
+                    <td><span class="material-icons-sharp">visibility</span></td>
+                    <td><span class="material-icons-sharp">file_download</span></td>
+                  </tr>
+                  <tr>
+                    <td>CFTF4RGTI</td>
+                    <td>Toyota Land Cruiser</td>
+                    <td>FC 800,000</td>
+                    <td>Mr. B Justice</td>
+                    <td>FC 152,000</td>
+                    <td><span class="material-icons-sharp">visibility</span></td>
+                    <td><span class="material-icons-sharp">file_download</span></td>
+                  </tr>
+                  <tr>
+                    <td>CFTF3RGTI</td>
+                    <td>Polo GTI 7-Speed DSG</td>
+                    <td>FC 245,000</td>
+                    <td>Mr. B Snowman</td>
+                    <td>FC 46,550</td>
+                    <td><span class="material-icons-sharp">visibility</span></td>
+                    <td><span class="material-icons-sharp">file_download</span></td>
+                  </tr>
+                  <tr>
+                    <td>CFTF2RGTI</td>
+                    <td>Polo TSI</td>
+                    <td>FC 199,000</td>
+                    <td>Mr. J Blaine</td>
+                    <td>FC 37,810</td>
+                    <td><span class="material-icons-sharp">visibility</span></td>
+                    <td><span class="material-icons-sharp">file_download</span></td>
+                  </tr>
+                  <tr>
+                    <td>CFTF1RGTI</td>
+                    <td>Golf 7.5 GTI</td>
+                    <td>FC 349,000</td>
+                    <td>Mr. X</td>
+                    <td>FC 66,310</td>
+                    <td><span class="material-icons-sharp">visibility</span></td>
+                    <td><span class="material-icons-sharp">file_download</span></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+
+      </main>
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+          <div class="profile">
+            <div class="info">
+              <p>Welcome, User</p>
+              <small class="text-muted"><b>Sales Representative</b></small>
+            </div>
+            <div class="profile-photo">
+              <img src="./Images/userprofile.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>CFTF - Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./Images/logo-bl.png">
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="index.html">
+            <span class="material-icons-sharp">dashboard</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="Tasks.html">
+            <span class="material-icons-sharp">task</span>
+            <h3>Tasks</h3>
+            <span class="message-count">6</span>
+          </a>
+          <a href="Inventory.html" class="active">
+            <span class="material-icons-sharp">inventory_2</span>
+            <h3>Inventory</h3>
+          </a>
+          <a href="profile.html">
+            <span class="material-icons-sharp">person_outline</span>
+            <h3>Profile</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <main>
+        <h1>Inventory</h1>
+        <div class="inventory">
+          <table>
+            <thead>
+              <tr>
+                <th>VIN</th>
+                <th>Category</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Exterior Colour</th>
+                <th>Interior Colour</th>
+                <th>Options</th>
+                <th>Price</th>
+                <th>Sell Price</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+                while($row=mysqli_fetch_assoc($res)){?>
+                <tr>
+                  <td><?php echo $row['VIN']?></td>
+                  <td><?php echo $row['CategoryID']?></td>
+                  <td><?php echo $row['Make']?></td>
+                  <td><?php echo $row['Model']?></td>
+                  <td><?php echo $row['Year']?></td>
+                  <td><?php echo $row['ExteriorColour']?></td>
+                  <td><?php echo $row['InteriorColour']?></td>
+                  <td><?php echo $row['Options']?></td>
+                  <td><?php echo $row['Price']?></td>
+                  <td><?php echo $row['SellPrice']?></td>
+                  <td><?php echo $row['']?></td>
+                  <td>   </td>
+
+                  <td></td>
+                  <td><span class="material-icons-sharp">edit</span></td>
+                  <td><span class="material-icons-sharp">delete_forever</span></td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

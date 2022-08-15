@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>CFTF - Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <aside>
+        <div class="top">
+          <div class="logo">
+            <img src="./Images/logo-bl.png">
+          </div>
+          <div class="close" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <a href="index.html">
+            <span class="material-icons-sharp">dashboard</span>
+            <h3>Dashboard</h3>
+          </a>
+          <a href="Tasks.html" class="active">
+            <span class="material-icons-sharp">task</span>
+            <h3>Tasks</h3>
+            <span class="message-count">6</span>
+          </a>
+          <a href="Inventory.html">
+            <span class="material-icons-sharp">inventory_2</span>
+            <h3>Inventory</h3>
+          </a>
+          <a href="profile.html">
+            <span class="material-icons-sharp">person_outline</span>
+            <h3>Profile</h3>
+          </a>
+          <a href="#">
+            <span class="material-icons-sharp">logout</span>
+            <h3>Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+      <main>
+        <h1>Tasks</h1>
+        <h2>To-Do List</h2>
+        <div class="recent-sales">
+          <table>
+            <thead>
+              <tr>
+                <th>Task No.</th>
+                <th>Description</th>
+                <th>Priority</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>1<td>
+                  <td>Delivery of Mr. X's Volvo XC90</td>
+                  <td class="danger">High</td>
+                  <td>28 August 2021</td>
+                </tr>
+                <tr>
+                  <td>2<td>
+                  <td>Sales Meeting</td>
+                  <td class="warning">Medium</td>
+                  <td>28 August 2021</td>
+                </tr>
+                <tr>
+                  <td>3<td>
+                  <td>Sales Meeting</td>
+                  <td class="warning">Medium</td>
+                  <td>15 August 2021</td>
+                </tr>
+                <tr>
+                  <td>4<td>
+                  <td>Delivery of Mr E Blues' Mercedes C200</td>
+                  <td class="danger">High</td>
+                  <td>2 September 2021</td>
+                </tr>
+                <tr>
+                  <td>5<td>
+                  <td>Performance Review Meeting</td>
+                  <td class="danger">High</td>
+                  <td> 1 September 2021</td>
+                </tr>
+                <tr>
+                  <td>6<td>
+                  <td>Polo GTI Pre-Delivery Inspection</td>
+                  <td class="success">Low</td>
+                  <td>7 September 2021</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Orders</h2>
+        <div class="recent-sales">
+          <table>
+            <thead>
+              <tr>
+                <th>Order No.</th>
+                <th>Vehicle</th>
+                <th>Customer</th>
+                <th>Payment</th>
+                <th>Status</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>CFTF6RDER</td>
+                  <td>Mercedes-Benz C200</td>
+                  <td>Mr. E Blues</td>
+                  <td>Due</td>
+                  <td class="danger">Pending</td>
+                  <td><span class="material-icons-sharp">visibility</span></td>
+                  <td><span class="material-icons-sharp">file_download</span></td>
+                </tr>
+                <tr>
+                  <td>CFTF5RDER</td>
+                  <td>Volvo XC90 D5 R-Design</td>
+                  <td>Mr. X</td>
+                  <td>Paid</td>
+                  <td class="warning">Pending</td>
+                  <td><span class="material-icons-sharp">visibility</span></td>
+                  <td><span class="material-icons-sharp">file_download</span></td>
+                </tr>
+                <tr>
+                  <td>CFTF4RDER</td>
+                  <td>Toyota Land Cruiser</td>
+                  <td>Mr. B Justice</td>
+                  <td>Paid</td>
+                  <td class="success">Delivered</td>
+                  <td><span class="material-icons-sharp">visibility</span></td>
+                  <td><span class="material-icons-sharp">file_download</span></td>
+                </tr>
+                <tr>
+                  <td>CFTF3RDER</td>
+                  <td>Polo GTI</td>
+                  <td>Mr. M Nhlapo</td>
+                  <td>Declined</td>
+                  <td class="danger">Cancelled</td>
+                  <td><span class="material-icons-sharp">visibility</span></td>
+                  <td><span class="material-icons-sharp">file_download</span></td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+      </main>
+
+      <div class="right">
+        <div class="top">
+          <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+          <div class="profile">
+            <div class="info">
+              <p>User</p>
+              <small class="text-muted"><b>Sales Representative</b></small>
+            </div>
+            <div class="profile-photo">
+              <img src="./Images/userprofile.png">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
