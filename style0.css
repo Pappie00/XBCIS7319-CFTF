@@ -1,0 +1,82 @@
+/* ------------------- INDEX HTML (HOMEPAGE)------------------- */
+*               {margin:0; padding:0; font-family:'Roboto', san-serif; box-sizing: border-box;}
+
+.container      {height:100%;
+                 background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(assets/images/Golf-GTI-BGIMG2.png);
+                 background-position: center;
+                 background-size: cover;
+                 padding-left: 8%; padding-right: 8%;
+                 box-sizing: border-box;}
+.container2     {height:100%;
+                 background-position: center;
+                 background-size: cover;
+                 padding-left: 8%; padding-right: 8%;
+                 box-sizing: border-box;}
+
+.logo           {width: 15%; cursor: pointer; padding-top: 2pt;}
+
+.menu-icon      {width: 30px; cursor: pointer; margin-left: 40px;}
+
+.navbar         {height:12%; display: flex; align-items: center; padding-top: 2%;}
+nav             {flex: 1; text-align: right;}
+nav ul li       {list-style: none; display: inline-block; margin-left: 60px; vertical-align:middle;}
+nav ul li       a{text-decoration: none; color: #fff; font-size: 13pt;}
+nav ul li       a2{text-decoration: none; color: #000; font-size: 13pt;}
+
+a:link          {text-decoration: none; color: #fff;}
+a:visited       {text-decoration: none; color: #fff;}
+a:hover         {text-decoration: none; color: #fff;}
+a:active        {text-decoration: none; color: #fff;}
+
+.row            {display: flex; height: 88%; align-items: center;}
+
+.col            {flex-basis: 50%;}
+
+h1              {color: #fff; font-size: 40px;}
+hr              {background-color: #ff1616; width: 10%; height: 2pt; border: none;}
+p               {color: #fff; font-size: 15px; line-height: 20px; padding-left: 10px;}
+p2              {color: #fff; font-size: 30px;}
+p3              {color: #fff; font-size: 20px; font-weight: lighter; font-style: italic;}
+
+button          {width: 180px;
+                 color: #fff;
+                 font-size: 12pt;
+                 font-weight: bold;
+                 padding: 12px 0;
+                 background: #ff1616;
+                 border: 0;
+                 border-radius: 20px;
+                 outline: none;
+                 margin-top: 30px;}
+
+
+
+/* ------------------- ENQUIRE AND CONTACT HTML ------------------- */
+section                                  {display: flex; justify-content: center; align-items: center; padding-top: 5%;}
+section::before                          {content: ''; position: absolute; top: 0; left: 0; width: 50%; height: 100%;}
+
+.container_contact                       {position: relative; min-width: 1100px; min-height: 550px; display: flex; z-index: 1000;}
+.container_contact .contactInfo          {position: absolute;
+                                          top: 40px;
+                                          width: 350px;
+                                          height: calc(100% - 80px);
+                                          background: #ff1616;
+                                          z-index: 1;
+                                          padding: 40px;
+                                          display: flex;
+                                          justify-content: center;
+                                          flex-direction: column;
+                                          justify-content: space-between;
+                                          box-shadow: 0 20px 25px rgba(0,0,0,0.15);}
+.container_contact .contactInfo h2       {color: #fff; font-size: 24px; font-weight: 500;}
+.container_contact .contactInfo ul.info  {position: relative; margin: 20px 0;}
+.container_contact .contactInfo ul.info li{position: relative;}
+.container_contact .contactForm          {position: absolute;
+                                          padding: 70px 50px;
+                                          padding-left: 250px;
+                                          margin-left: 150px;
+                                          width: calc(100% - 150px);
+                                          height: 100%;
+                                          background: #fff;
+                                          box-shadow: 0 50px 50px rgba(0,0,0,0.25);
+                                        }

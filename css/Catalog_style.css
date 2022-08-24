@@ -1,0 +1,231 @@
+
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+hr{
+    height: 5px;
+    background-color: #dc4e41cc;
+    border: none;
+}
+
+h2
+{
+    font-family: Poppins;
+}
+
+.center
+{
+    text-align: center;
+}
+
+.logo           {width: 15%; cursor: pointer; padding-top: 2pt;}
+.menu-icon      {width: 30px; cursor: pointer; margin-left: 40px;}
+
+.navbar         {height:12%; display: flex; align-items: center; padding-top: 2%;}
+nav             {flex: 1; text-align: right;}
+nav ul li       {list-style: none; display: inline-block; margin-left: 60px; vertical-align:middle;}
+nav ul li       a{text-decoration: none; color: #000; font-size: 13pt;}
+nav ul li       a2{text-decoration: none; color: #000; font-size: 13pt;}
+
+a:link          {text-decoration: none; color: #000;}
+a:visited       {text-decoration: none; color: #000;}
+a:hover         {text-decoration: none; color: #000;}
+a:active        {text-decoration: none; color: #000;}
+
+a {
+    cursor: pointer;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444343;
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #535353;
+}
+
+strong {
+    color: #535353;
+}
+
+span {
+    color: #535353;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #161616;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #535353;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/** Car box 2 start **/
+.car-box-2 {
+    position: relative;
+    margin-bottom: 70px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    transition: all 0.9s;
+}
+
+.car-box-2:hover{
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.car-box-2:hover .price-box {
+    color: #fff;
+}
+
+.car-box-2 .car-thumbnail:before {
+    content: "";
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 8;
+    background: linear-gradient(to top,rgba(47, 45, 45, 0.2) 0%,rgba(0, 0, 0, 0.1) 35%,rgba(2, 2, 2, 0) 60%,rgba(0,0,0,0) 100%);
+    border-radius: 0;
+    opacity: 1;
+}
+
+.car-box-2:hover .car-thumbnail:before {
+    background-image: linear-gradient(
+            358deg, #f0151f 8%, #f0151f4d 82%)!important;
+    opacity: .5;
+}
+
+.car-box-2 .detail .title {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.car-box-2 .car-img img{
+    width: 100%;
+}
+
+.car-box-2 .detail .title a:hover {
+    color: #343a40;
+}
+
+.car-box-2 .detail .location {
+    margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.car-box-2 .detail .location a {
+    color: #5f5e5e;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.car-box-2 .price-box {
+    bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 1;
+}
+
+.car-box-2 .tag{
+    left: 15px;
+}
+
+.car-box-2 .car-thumbnail {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.car-box-2 .listing-badges .featured {
+    left: -51px;
+}
+
+.car-box-2 .listing-time {
+    position: absolute;
+    z-index: 9;
+    top: 8px;
+    left: 30px;
+}
+
+.car-box-2 .detail{
+    padding: 0 25px;
+}
+
+.car-box-2 .facilities-list li {
+    list-style: none;
+    width: 33.33%;
+    float: left;
+    font-weight: 400;
+    line-height: 35px;
+    font-size: 15px;
+}
+
+.car-box-2 .facilities-list li i {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.car-box-2:hover .carbox-overlap-wrapper {
+    visibility: visible;
+    top: 0;
+    cursor: pointer;
+    transition: all .15s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
